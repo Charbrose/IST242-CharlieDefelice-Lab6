@@ -22,9 +22,9 @@ class Ant {
 
     //constructor for Ant class
     public Ant(int x, int y, int[][] grid) {
-        this.x = x;
-        this.y = y;
-        this.grid = grid;
+        this.x = x; //sets the x-coordinate of the ant's position
+        this.y = y; //sets the y-coordinate of the ant's position
+        this.grid = grid; //sets the grid where the ant is moving
     }
 
     //moves the ant
@@ -60,12 +60,12 @@ class Ant {
 
     //getter for the x-coordinate
     public int getX() {
-        return x;
+        return x; //returns the current x-coordinate
     }
 
     //getter method for the y-coordinate
     public int getY() {
-        return y;
+        return y; //returns the current y-coordinate
     }
 }
 
@@ -73,8 +73,7 @@ public class AntRoutingExample {
 
     public static void main(String[] args) {
         int[][] grid = new int[10][10]; //makes the grid
-        //sets obstacle at (3,3)
-        grid[3][3] = 1;
+        grid[3][3] = 1; //sets obstacle at (3,3)
 
         Ant ant = new Ant(0, 0, grid); //creates ant at position (0,0)
         int steps = 20; //number of steps to move the ant
